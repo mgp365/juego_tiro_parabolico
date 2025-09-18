@@ -56,8 +56,9 @@ def move():
     draw()
 
     for target in targets:
-        if not inside(target):
-            return
+        if not inside(target): # Regina Aguilar García - A00841923, # César Tadeo Bernal Sauceda - A00841810
+            target.x = 200
+            target.y = randrange(-150, 150)
 
     ontimer(move, 50)
 
